@@ -7,8 +7,8 @@ public class LivroTeste {
         meuLivro.resumo = "bla bla bla bla bla";
         meuLivro.autor = "J. R. Tolkien";
 
-        Editora editora1 = new Editora();
-        editora1.nome ="Editora Erica";
+        Editora editora1 = new Editora("Editora Erica");
+        //editora1.nome ="Editora Erica";
         editora1.email = "edErica@gmail.com";
         meuLivro.editora = editora1;
 
