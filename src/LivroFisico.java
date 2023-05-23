@@ -6,4 +6,13 @@ public class LivroFisico extends Livro{ //extends -> herda (no caso de Livro.)
         return preco * 0.05;           //gracas ao protected, so chamar o "preco"
     }
 
+    void aplicarDesconto(double percentual) {
+        if(percentual > 0.3){
+            System.out.println("Desconto não permitido");
+        }else{
+            preco = preco - (preco * percentual);
+        }
+    }
+
+
 }
